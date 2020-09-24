@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <title>productos</title>
+</head>
+<body>
+    <!--======================
+        NAVBAR placement
+        ========================-->
+        <section id="header"></section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="#header">
+                <img class="mb-0" src="img/nolton.png" alt="Mi marca" width="143" height="59">
+            </a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"><!--ICONO BOTON--><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mi doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galería de amigos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La tienda</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#farmacia">Farmacia</a>
+                            <a class="dropdown-item" href="#">Nutición</a>
+                            <a class="dropdown-item" href="#gridProductos">Juguetes</a>
+                            <a class="dropdown-item" href="#">Ropa y Accesorios</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertas :-)</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!--======================JUMBOTRON ========================-->
+        
+        <div class="container-fluid text-center">
+            <footer>
+                <h1 class="display-3">La tienda</h1>
+                <hr class="my-2">
+                <p>Aquí el lema del cliente</p>
+            </footer>
+        </div>
+        
+        
+        <!--======================HACE FALTA QUE ESTE DIV SIEMBRE ESTÉ ENCIMA DE LOS OTROS ELEMENTOS========================-->
+                        <!--=== ESTA ES LA VERSIÓN CON STYLE===-->
+                    <div style="position:fixed;left:79.1%;"> 
+                        Este debe mantenerse flotando a la derecha de manera fija, ENCIMA DE TODO SIEMPRE.
+                        
+                    </div>
+                    
+                    <!--=== ESTA ES LA VERSIÓN NATIVA DE BOOTSTRAP===-->
+                    <div class="position-fixed"><span class="w-30">Este debe mantenerse flotando a la derecha de manera fija, ENCIMA DE TODO SIEMPRE.</span> </div>
+                    
+                    
+        <!--======================producto destacado carrusel========================-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!--<h1 class="display-1 bg-primary">CARRUSEL title</h1> -->   
+                    <div class="card-header text-center"><h4>Últimos en inventario</h4></div>
+                </div>
+                <div class="col-sm-12">
+                    <!--======carrusel=====-->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block h-80 mx-auto img-thumbnail" src="img/petcarrusel1.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Juguete 1<span class="badge badge-secondary rounded-circle">3</span></h3>
+                                    <p>$10500</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block h-80 mx-auto img-thumbnail" src="img/petcarrusel2.jpg" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Juguete 2<span class="badge badge-secondary rounded-circle">1</span></h3>
+                                    <p>$15000</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block h-80 mx-auto img-thumbnail" src="img/petcarrusel3.jpg" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Juguete 3 <span class="badge badge-secondary rounded-circle">4</span></h3>
+                                    <p>$8600</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!--======carrusel=====-->
+                </div>
+                
+            </div>
+            <hr class="my-2">
+        </div>
+        <!--======================SUSCRIPCIÓN A OFERTAS Y CONSEJOS========================-->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1>Ofertas</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque hic unde quam sint recusandae dignissimos id, optio omnis fugiat, deserunt </p1>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <!--==SUSCRIPCIÓN A OFERTAS Y CONSEJOS=====-->
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6 px-5">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="correo@ejemplo.com">
+                                    <!--<small id="emailHelp" class="form-text text-muted">Al siscribirte aceptas nuestra política de tratamiento de datos.</small>-->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 px-5">
+                                <button type="submit" class="btn btn-secondary btn-block">Suscribirse</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        <!--======================GRID DE PRODUCTOS========================-->
+        <section id="gridProductos"></section>
+        <div class="container-fluid">
+            <hr class="my-2">
+            <div class="row">
+                <div class="col-md-4">
+                    <!--======card=====-->
+                    <div class="card">
+                        <img class="card-img-top" src="img/img1Grid.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">$15.000</a>
+                        </div>
+                    </div>
+                    <!--======card=====-->
+                    
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="col-md-12">
+                        <!--======card=====-->
+                        <div class="card">
+                            <img class="card-img-top" src="img/img2Grid.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title2</h5>
+                                <p class="card-text">Some quick example text.</p>
+                                <a href="#" class="btn btn-primary">$15.000</a>
+                            </div>
+                        </div>
+                        <!--======card=====-->
+                    </div>
+                    <div class="col-md-12">
+                        <!--======card=====-->
+                        <div class="card">
+                            <img class="card-img-top" src="img/img2Grid.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title3</h5>
+                                <p class="card-text">Some quick example text.</p>
+                                <a href="#" class="btn btn-primary">$15.000</a>
+                            </div>
+                        </div>
+                        <!--======card=====-->
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="col-md-12">
+                        <!--======card=====-->
+                        <div class="card">
+                            <img class="card-img-top" src="img/img2Grid.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title4</h5>
+                                <p class="card-text">Some quick example text.</p>
+                                <a href="#" class="btn btn-primary">$15.000</a>
+                            </div>
+                        </div>
+                        <!--======card=====-->
+                    </div>
+                    <div class="col-md-12">
+                        <!--======card=====-->
+                        <div class="card">
+                            <img class="card-img-top" src="img/img2Grid.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title5</h5>
+                                <p class="card-text">Some quick example text.</p>
+                                <a href="#" class="btn btn-primary">$15.000</a>
+                            </div>
+                        </div>
+                        <!--======card=====-->
+                    </div>
+                </div>
+            </div>
+            <hr class="my-2">
+        </div>
+        
+        
+        <!--======================PRUDUCTOS FARMACIA carrusel========================-->
+        <SEction id="farmacia">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!--<h1 class="display-1 bg-primary">CARRUSEL title</h1> -->   
+                        <div class="card-header text-center"><h4>Farmacia</h4></div>
+                    </div>
+                    <div class="col-sm-12">
+                        <!--======carrusel=====-->
+                        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block h-80 mx-auto img-thumbnail" src="img/petcarrusel1.jpg" alt="First slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h3>Juguete 1<span class="badge badge-secondary rounded-circle">3</span></h3>
+                                        <p>$10500</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block h-80 mx-auto img-thumbnail" src="img/petcarrusel2.jpg" alt="Second slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h3>Juguete 2<span class="badge badge-secondary rounded-circle">1</span></h3>
+                                        <p>$15000</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block h-80 mx-auto img-thumbnail" src="img/petcarrusel3.jpg" alt="Third slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h3>Juguete 3 <span class="badge badge-secondary rounded-circle">4</span></h3>
+                                        <p>$8600</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!--======carrusel=====-->
+                    </div>
+                    
+                </div>
+                <hr class="my-2">
+            </div>
+        </SEction>
+        <!--===========================ABOUT YOUR SHOP================================-->
+        <div class="alert alert-light text-center" role="alert">
+            <h1 class="display-5">Esta tienda</h1>
+            <h5>Comentarios adicionales <span class="alert-link">acerca de</span> esta tienda</h5>
+        </div>
+        <!--===========================FOOTER================================-->
+        <footer class="p-4 my-md-1 pt-md-3 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <a href="#header">
+                        <img class="mb-2" src="img/nolton.png" alt="" width="143" height="59">
+                    </a>
+                    <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                        <li><a class="text-muted" href="#">Another one</a></li>
+                        <li><a class="text-muted" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+        
+        <script src="js/custom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
